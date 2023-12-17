@@ -4,7 +4,7 @@ class MeinStudium extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(),
+      home: const MeinStudiumPage(),
     );
   }
 }
@@ -16,17 +16,17 @@ class MeinStudiumPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage('lib/hintergrund.jpg'),
-          fit: BoxFit.cover,
-        ),
-      ),
+          //image: DecorationImage(
+          //image: AssetImage('lib/hintergrund.jpg'),
+          //fit: BoxFit.cover,
+          ),
+      //),
       child: Scaffold(
         appBar: AppBar(
           leading: IconButton(
             icon: Icon(Icons.arrow_back),
             onPressed: () {
-               Navigator.pop(context); 
+              Navigator.pop(context);
             },
           ),
           title: const Text('Mein Studium'),

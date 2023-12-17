@@ -8,6 +8,14 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('TUD Mobile'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.person),
+            onPressed: () {
+              // Hier sollte die Logik für den Zugriff auf das Nutzerprofil stehen
+            },
+          ),
+        ],
       ),
       body: Center(
         child: Column(
